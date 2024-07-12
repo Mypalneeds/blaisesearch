@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blaise Search is a powerful search engine that helps you find relevant information quickly and easily.">
+    <meta name="keywords" content="search engine, search, find, results, web search, Blaise Search">
+    <meta name="author" content="Mark">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Blaise Search - Find What You Need Quickly">
+    <meta property="og:description" content="Blaise Search is a powerful search engine that helps you find relevant information quickly and easily.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Blaise Search">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Blaise Search - Find What You Need Quickly">
+    <meta property="twitter:description" content="Blaise Search is a powerful search engine that helps you find relevant information quickly and easily.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blaise Search</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Blaise Search</h1>
+        <form id="search-form" class="form-inline justify-content-center mb-4">
+            <input type="text" id="search-input" class="form-control mr-2" placeholder="Search...">
+            <button type="submit" class="btn btn-primary mr-2">Search</button>
+            <button type="button" id="voice-button" class="btn btn-info mr-2">🎤</button>
+            <button type="button" id="clear-button" class="btn btn-danger">Clear</button>
+        </form>
+        <div id="spinner" class="spinner" style="display: none;"></div>
+        <div id="results" class="mt-4"></div>
+        <div id="pagination" class="d-flex justify-content-center mt-4">
+            <button id="prev-page" class="btn btn-secondary mr-2" disabled>Previous</button>
+            <button id="next-page" class="btn btn-secondary" disabled>Next</button>
+        </div>
+        <div id="history" class="mt-4">
+            <h2>Search History</h2>
+            <ul id="history-list" class="list-group"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
